@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">#ab8484</color>
+    <color name="colorPrimaryDark">#f6e8e8</color>
+    <color name="colorAccent">#172846</color>
+
+    <color name="button_signup">#39796b</color>
+    <color name="button_signup_active">#ab8484</color>
+
+
+    <color name="mybg">#C4B9B9</color>
+</resources>

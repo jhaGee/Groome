@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ShopStatus">
+
+    <ImageView
+        android:id="@+id/logo_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_30sdp"
+        android:src="@drawable/logo_screen"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/not_free_bg"
+        android:layout_below="@id/logo_screen"
+        android:padding="@dimen/_30sdp"
+        android:layout_margin="@dimen/_30sdp"
+        android:text="Shop is closed"
+        android:gravity="center"/>
+
+</RelativeLayout>

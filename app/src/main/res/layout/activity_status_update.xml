@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusUpdate">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.9"
+            android:padding="@dimen/_30sdp"/>
+
+        <Button
+            android:id="@+id/button_logout_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bg_round_button"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_weight=".1"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_30sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_below="@+id/header"
+        android:text="Update Current Status"
+        android:textSize="28sp"
+        android:gravity="center"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saloon is open"
+        android:buttonTint="@color/colorAccent"
+        android:layout_below="@id/status"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:checked="false"
+        android:textSize="24sp"/>
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkbox_Open"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Saloon is close"-->
+<!--        android:buttonTint="@color/colorAccent"-->
+<!--        android:layout_below="@id/status"-->
+<!--        android:layout_marginTop="@dimen/_49sdp"-->
+<!--        android:layout_marginLeft="@dimen/_30sdp"-->
+<!--        android:layout_marginStart="@dimen/_30sdp"-->
+<!--        android:layout_marginRight="@dimen/_30sdp"-->
+<!--        android:layout_marginEnd="@dimen/_30sdp"-->
+<!--        android:checked="false"-->
+<!--        android:textSize="24sp"/>-->
+
+    <TextView
+        android:id="@+id/notfree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_close"
+        android:text="If not free "
+        android:textSize="24sp"
+        android:layout_margin="@dimen/_45sdp" />
+
+    <Button
+        android:id="@+id/button_updateSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Seats"
+        android:layout_below="@id/notfree"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:padding="@dimen/_20sdp"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_round_button"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

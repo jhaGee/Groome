@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeatsUpdate">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@android:color/black"
+        android:text="Update Seats"
+        android:textSize="28sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_logout_seats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:background="@drawable/bg_round_button"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_2sdp"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/list_seats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seats"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@drawable/et_bg"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/list_free"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free"
+            android:background="@drawable/et_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/list_notfree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not Free"
+            android:textColor="#fff"
+            android:background="@drawable/et_bg"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:padding="@dimen/_5sdp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/update_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_below="@+id/heading"
+        android:layout_above="@id/button_deleteSeat"/>
+
+    <Button
+        android:id="@+id/button_deleteSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_newSeat"
+        android:text="Delete recent seat"
+        android:background="@drawable/bg_round_button"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_40sdp"
+        android:paddingRight="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"/>
+
+    <Button
+        android:id="@+id/button_newSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/que"
+        android:text="Add new seat"
+        android:background="@drawable/bg_round_button"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_40sdp"
+        android:paddingRight="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"/>
+
+    <LinearLayout
+        android:id="@+id/que"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_above="@id/button_save"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customers in que :"
+            android:textSize="@dimen/_17ssp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:padding="@dimen/_5sdp"/>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/editText_que"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:textColor="@android:color/black"
+            android:layout_weight="2"
+            app:backgroundDrawable="@drawable/bg_round_button"
+            app:textSize="@dimen/_8ssp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_round_button"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textColor="@android:color/white"
+        android:paddingLeft="@dimen/_40sdp"
+        android:paddingRight="@dimen/_40sdp" />
+
+
+</RelativeLayout>

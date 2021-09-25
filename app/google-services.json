@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "453617976951",
+    "firebase_url": "https://groome-fb90c.firebaseio.com",
+    "project_id": "groome-fb90c",
+    "storage_bucket": "groome-fb90c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453617976951:android:17f42d45153c69cf0ea872",
+        "android_client_info": {
+          "package_name": "com.e.groome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453617976951-009sdc86ef7kjn6ikq9gac6icvu04q8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.groome",
+            "certificate_hash": "f340678c4403f2535e8b3203d62210622d8a5efe"
+          }
+        },
+        {
+          "client_id": "453617976951-e1pr2n8buv5t80q5imatn8aalm4av0ac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1TxbqqTcRNcWYhbgQMrpEaT5x02xC8Kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453617976951-e1pr2n8buv5t80q5imatn8aalm4av0ac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
